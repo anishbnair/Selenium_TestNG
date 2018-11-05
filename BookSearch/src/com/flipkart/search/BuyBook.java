@@ -22,6 +22,8 @@ public class BuyBook {
 		driver.get("https://www.flipkart.com/");		
 	}
 	
-	
+	public void ShopBook() {
+		
+	}
 
 }
