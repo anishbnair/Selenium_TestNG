@@ -11,6 +11,8 @@ public class BuyBook {
 	
 	public void PreConditions() {		
 		driver = new ChromeDriver();
+		wait = new WebDriverWait(driver, 20);
+		driver.manage().window().maximize();
 		
 	}
 
