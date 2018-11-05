@@ -13,6 +13,7 @@ public class BuyBook {
 		driver = new ChromeDriver();
 		wait = new WebDriverWait(driver, 20);
 		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
 		
 	}
 
