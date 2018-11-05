@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SeleniumProject" duration-ms="12" started-at="2018-11-05T23:31:01Z" finished-at="2018-11-05T23:31:01Z">
+    <groups>
+    </groups>
+    <test name="RegressionTest" duration-ms="12" started-at="2018-11-05T23:31:01Z" finished-at="2018-11-05T23:31:01Z">
+    </test> <!-- RegressionTest -->
+  </suite> <!-- SeleniumProject -->
+</testng-results>
