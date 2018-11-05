@@ -1,5 +1,7 @@
 package com.flipkart.search;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -14,6 +16,8 @@ public class BuyBook {
 		wait = new WebDriverWait(driver, 20);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.get("https://www.flipkart.com/");
 		
 	}
 
