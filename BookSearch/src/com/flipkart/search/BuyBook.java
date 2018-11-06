@@ -33,6 +33,13 @@ public class BuyBook {
 		driver.findElement(By.xpath("//input[@name='q']")).sendKeys("selenium book");
 		//	Click on Search	
 		driver.findElement(By.xpath("//input[@name='q']")).submit();
+		// click on book
+		driver.findElement(By.xpath("//img[@class='_1Nyybr  _30XEf0']")).click();
+		
+		// Enter ZIP code
+		driver.findElement(By.xpath("//input[@id='pincodeInputId']")).sendKeys("685588");
+		// Click on Check
+		driver.findElement(By.xpath("//span[@class='_2aK_gu']")).click();
 		
 	}
 
