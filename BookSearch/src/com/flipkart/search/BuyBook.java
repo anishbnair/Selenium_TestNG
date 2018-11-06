@@ -26,7 +26,13 @@ public class BuyBook {
 	
 	@Test
 	public void ShopBook() {
-		driver.findElement(By.xpath("//input[@name='q']")).sendKeys("Selenium");		
+		
+		// Close Login popup
+		driver.findElement(By.xpath("//button[@class='_2AkmmA _29YdH8']")).click();
+		// Enter Selenium in the search field
+		driver.findElement(By.xpath("//input[@name='q']")).sendKeys("selenium book");
+		//	Click on Search	
+		driver.findElement(By.xpath("//input[@name='q']")).submit();
 		
 	}
 
