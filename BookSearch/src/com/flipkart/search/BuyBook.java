@@ -1,8 +1,13 @@
 package com.flipkart.search;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -26,7 +31,7 @@ public class BuyBook {
 	}
 	
 	@Test
-	public void ShopBook() {
+	public void ShopBook() throws IOException, InterruptedException {
 		
 		// Close Login popup
 		driver.findElement(By.xpath("//button[@class='_2AkmmA _29YdH8']")).click();
@@ -45,6 +50,7 @@ public class BuyBook {
 		    }       
 		}
 		
+		Thread.sleep(5000);
 		// Enter ZIP code
 		driver.findElement(By.xpath("//input[@id='pincodeInputId']")).sendKeys("685588");
 		// Click on Check
@@ -59,14 +65,22 @@ public class BuyBook {
 		// Place order
 		driver.findElement(By.xpath("//button[@class='_2AkmmA _14O7kc _7UHT_c']")).click();
 		// Enter email, password and click Login
-		driver.findElement(By.xpath("//input[@class='_2zrpKA _2rqcw- _3v41xv F_Atl2 _14H79F']")).sendKeys("test@gmail.com");
-		driver.findElement(By.xpath("//input[@class='_2zrpKA _2rqcw- _3v41xv _14H79F']")).sendKeys("test");
-		driver.findElement(By.xpath("//input[@class='_2zrpKA _2rqcw- _3v41xv _14H79F']")).sendKeys("test");
+		driver.findElement(By.xpath("//input[@class='_2zrpKA _14H79F']")).sendKeys("test@gmail.com");
+		driver.findElement(By.xpath("//button[@class='_2AkmmA _1poQZq _7UHT_c']")).click();
+		driver.findElement(By.xpath("//input[@class='_2zrpKA _3v41xv _14H79F']")).sendKeys("test");
+		driver.findElement(By.xpath("//button[@class='_2AkmmA _1poQZq _7UHT_c']")).click();
+		Thread.sleep(5000);
 		
+		// Capture screenshot	
+		File scrFile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		// Now you can do whatever you need to do with it, for example copy somewhere
+		FileUtils.copyFile(scrFile, new File("C:\\Screenshots\\screenshot.png"));
 		
-//		driver.close();
-//		driver.switchTo().window(currentTab);
-		
+		Thread.sleep(5000);
+		driver.close();
+		driver.switchTo().window(currentTab);
+		driver.close();		
+			
 	}
 
 }

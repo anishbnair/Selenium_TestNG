@@ -5,16 +5,16 @@
       <![CDATA[9-10 days]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20042" started-at="2018-11-06T01:07:49Z" finished-at="2018-11-06T01:08:09Z">
+  <suite name="Default suite" duration-ms="40454" started-at="2018-11-06T01:57:21Z" finished-at="2018-11-06T01:58:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20042" started-at="2018-11-06T01:07:49Z" finished-at="2018-11-06T01:08:09Z">
+    <test name="Default test" duration-ms="40454" started-at="2018-11-06T01:57:21Z" finished-at="2018-11-06T01:58:01Z">
       <class name="com.flipkart.search.BuyBook">
-        <test-method status="PASS" signature="PreConditions()[pri:0, instance:com.flipkart.search.BuyBook@2833cc44]" name="PreConditions" is-config="true" duration-ms="13628" started-at="2018-11-06T01:07:49Z" finished-at="2018-11-06T01:08:03Z">
+        <test-method status="PASS" signature="PreConditions()[pri:0, instance:com.flipkart.search.BuyBook@2833cc44]" name="PreConditions" is-config="true" duration-ms="13262" started-at="2018-11-06T01:57:21Z" finished-at="2018-11-06T01:57:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PreConditions -->
-        <test-method status="PASS" signature="ShopBook()[pri:0, instance:com.flipkart.search.BuyBook@2833cc44]" name="ShopBook" duration-ms="6372" started-at="2018-11-06T01:08:03Z" finished-at="2018-11-06T01:08:09Z">
+        <test-method status="PASS" signature="ShopBook()[pri:0, instance:com.flipkart.search.BuyBook@2833cc44]" name="ShopBook" duration-ms="27141" started-at="2018-11-06T01:57:34Z" finished-at="2018-11-06T01:58:01Z">
           <reporter-output>
             <line>
               <![CDATA[9-10 days]]>
