@@ -58,6 +58,11 @@ public class BuyBook {
 		driver.findElement(By.xpath("//button[@class='_2AkmmA _2Npkh4 _2MWPVK']")).click();
 		// Place order
 		driver.findElement(By.xpath("//button[@class='_2AkmmA _14O7kc _7UHT_c']")).click();
+		// Enter email, password and click Login
+		driver.findElement(By.xpath("//input[@class='_2zrpKA _2rqcw- _3v41xv F_Atl2 _14H79F']")).sendKeys("test@gmail.com");
+		driver.findElement(By.xpath("//input[@class='_2zrpKA _2rqcw- _3v41xv _14H79F']")).sendKeys("test");
+		driver.findElement(By.xpath("//input[@class='_2zrpKA _2rqcw- _3v41xv _14H79F']")).sendKeys("test");
+		
 		
 //		driver.close();
 //		driver.switchTo().window(currentTab);
