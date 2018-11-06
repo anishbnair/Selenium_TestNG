@@ -2,10 +2,12 @@ package com.flipkart.search;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 public class BuyBook {
 	
@@ -22,7 +24,9 @@ public class BuyBook {
 		driver.get("https://www.flipkart.com/");		
 	}
 	
+	@Test
 	public void ShopBook() {
+		driver.findElement(By.xpath("//input[@name='q']")).sendKeys("Selenium");		
 		
 	}
 
